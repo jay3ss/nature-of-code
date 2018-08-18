@@ -16,8 +16,6 @@ int main()
 
     JVector center(WIDTH/2, HEIGHT/2);
     JVector mouse(getMouseX(&window), getMouseY(&window));
-    JVector endpoint = center;
-
 
     // To draw a line, use the sf::VertexArray
     sf::VertexArray line(sf::Lines, 2);
