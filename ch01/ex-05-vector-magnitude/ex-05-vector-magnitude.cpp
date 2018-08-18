@@ -1,4 +1,4 @@
-// Nature of Code - Example 1.3 (Vector subtraction)
+// Nature of Code - Example 1.5 (Vector magnitude)
 
 #include "SFML/Graphics.hpp"
 #include "jvector.cpp"
@@ -12,7 +12,7 @@ int main()
     const int WIDTH = 800;
     const int HEIGHT = 600;
 
-    sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "NoC - Example 1.3");
+    sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "NoC - Example 1.5");
 
     JVector center(WIDTH/2, HEIGHT/2);
     JVector mouse(getMouseX(window), getMouseY(window));
