@@ -1,5 +1,4 @@
-#ifndef JVECTOR_EX_1_03_H
-#define JVECTOR_EX_1_03_H
+#pragma once
 
 #include <cmath>
 
@@ -58,5 +57,3 @@ void JVector::sub(JVector v)
     x -= v.x;
     y -= v.y;
 }
-
-#endif // JVECTOR_EX_1_03_H

@@ -1,6 +1,4 @@
-#ifndef JVECTOR_EX_1_02_H
-#define JVECTOR_EX_1_02_H
-
+#pragma once
 
 class JVector{
 public:
@@ -20,5 +18,3 @@ void JVector::add(JVector v)
     x += v.x;
     y += v.y;
 }
-
-#endif // JVECTOR_EX_1_02_H
