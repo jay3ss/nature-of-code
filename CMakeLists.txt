@@ -3,4 +3,4 @@ set (CMAKE_CXX_STANDARD 11)
 project(natureofcode)
 
 add_subdirectory(ch01)
-
+add_subdirectory(ch02)
