@@ -79,7 +79,7 @@ void Mover::update()
 void Mover::update(JVector dir)
 {
     acceleration = dir;
-    acceleration.setMag(0.2);
+    acceleration.setMag(0.8);
     //acceleration.normalize();
     velocity.add(acceleration);
     velocity.limit(_topspeed);

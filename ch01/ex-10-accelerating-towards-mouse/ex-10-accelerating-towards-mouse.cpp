@@ -11,9 +11,10 @@ int main()
     const int WIDTH = 800;
     const int HEIGHT = 600;
     sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "NoC - Example 1.10");
+    window.setFramerateLimit(60);
 
     double radius = 50;
-    double topspeed = 0.25;
+    double topspeed = 6;
     Mover mover(WIDTH, HEIGHT, topspeed);
     sf::CircleShape circle(radius);
     circle.setPosition(mover.position.x, mover.position.y);
