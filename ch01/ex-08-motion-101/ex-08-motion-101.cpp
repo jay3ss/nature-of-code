@@ -1,4 +1,4 @@
-// Nature of Code - Example 1.7 (Motion 101)
+// Nature of Code - Example 1.8 (Motion 101)
 
 #include "SFML/Graphics.hpp"
 #include "mover.hpp"
