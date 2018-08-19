@@ -11,6 +11,7 @@ public:
 
     void checkEdges();
     void update();
+    void update(JVector);
     
     JVector position;
     JVector velocity;
@@ -70,6 +71,16 @@ void Mover::update()
     std::uniform_real_distribution<double> unif(-0.075, 0.075);
     acceleration.x = unif(gen);
     acceleration.y = unif(gen);
+    velocity.add(acceleration);
+    velocity.limit(_topspeed);
+    position.add(velocity);
+}
+
+void Mover::update(JVector dir)
+{
+    acceleration = dir;
+    acceleration.setMag(0.2);
+    //acceleration.normalize();
     velocity.add(acceleration);
     velocity.limit(_topspeed);
     position.add(velocity);

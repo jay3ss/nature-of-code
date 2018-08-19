@@ -1,6 +1,7 @@
 #pragma once
 
 #include <cmath>
+#include <ostream>
 
 class JVector{
 public:
@@ -22,6 +23,7 @@ public:
     double mag();
     void mult(double);
     void normalize();
+    void setMag(double);
     void sub(JVector);
 
     // Static functions
@@ -68,6 +70,12 @@ void JVector::normalize()
     {
         div(m);
     }
+}
+
+void JVector::setMag(double m)
+{
+    normalize();
+    mult(m);
 }
 
 void JVector::sub(JVector v)
