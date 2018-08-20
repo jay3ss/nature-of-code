@@ -1,6 +1,5 @@
 #pragma once
 
-#include <random>
 #include "SFML/Graphics.hpp"
 #include "jvector.hpp"
 
@@ -32,12 +31,9 @@ Mover::Mover(double w, double h, double m, double r)
     _height = h;
     _mass = m;
     _radius = r;
-    std::random_device rd;
-    std::mt19937 gen(rd());
-    std::uniform_real_distribution<double> pxunif(0, _width);
-    std::uniform_real_distribution<double> pyunif(0, _height);
-    position.x = pxunif(gen);
-    position.y = pyunif(gen);
+
+    position.x = 30;
+    position.y = 30;
 
     velocity.x = 0;
     velocity.y = 0;
