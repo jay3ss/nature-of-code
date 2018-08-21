@@ -1,1 +1,5 @@
 add_subdirectory(ex-01-forces)
+add_subdirectory(ex-02-forces-many-objects)
+add_subdirectory(ex-03-gravity-scaled-by-mass)
+add_subdirectory(ex-04-including-friction)
+add_subdirectory(ex-05-fluid-resistance)
